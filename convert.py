@@ -4,7 +4,7 @@ if __name__ == '__main__':
     file_name = 'teams.csv'
     file_name = file_name[:-4]
     new_header = []
-    with open(file_name + '.csv', 'r') as infile, open(file_name + '_out.csv', 'w') as outfile:
+    with open(file_name + '.csv', 'r') as infile, open(file_name + '-out.csv', 'w') as outfile:
         reader = csv.reader(infile)
         writer = csv.writer(outfile)
         new_header = next(reader, None)
